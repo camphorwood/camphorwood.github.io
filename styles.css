@@ -1,0 +1,20 @@
+body {
+	display: grid;
+	place-items: center;
+}
+
+p {
+	margin: .5px;
+	height: 75px;
+	text-align: center;
+}
+
+.board-row {
+	display: flex;
+}
+
+.tile {
+	margin: .5px;
+	width: 75px;
+	height: 75px;
+}
