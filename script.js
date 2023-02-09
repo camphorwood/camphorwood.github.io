@@ -6,7 +6,7 @@ function move(tileID) {
 	if (has_selection == true)
 	{
 		tile.src = selected_tile.src;
-		tile.alt = "FLAG";
+		tile.alt = selected_tile.alt;
 		selected_tile.src = "";
 		selected_tile.alt = "";
 		selected_tile = null;
