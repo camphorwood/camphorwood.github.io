@@ -55,14 +55,14 @@ function move(tile)
 				let team = selected_tile.alt.slice(0,1);
 				if (team == "R")
 				{
-					if ((sel_row > 2) || (sel_col < 3) || (sel_col > 5))
+					if ((dst_row > 2) || (dst_col < 3) || (dst_col > 5))
 					{
 						return false;
 					}
 				}
 				else if (team == "B")
 				{
-					if ((sel_row < 7) || (sel_col < 3) || (sel_col > 5))
+					if ((dst_row < 7) || (dst_col < 3) || (dst_col > 5))
 					{
 						return false;
 					}
