@@ -1,10 +1,18 @@
 body {
 	display: grid;
 	place-items: center;
+	background-image: url("boardv2.png");
+	background-repeat: no-repeat;
+	background-position:center 35px;
+}
+
+ul {
+	position: absolute;
+	top:65px;
 }
 
 p {
-	margin: .5px;
+	margin: 1px;
 	height: 75px;
 	text-align: center;
 }
@@ -13,8 +21,14 @@ p {
 	display: flex;
 }
 
+.river {
+	margin: 1px;
+	height: 75px;
+
+}
+
 .tile {
-	margin: .5px;
+	margin: 1px;
 	width: 75px;
 	height: 75px;
 }

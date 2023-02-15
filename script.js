@@ -16,7 +16,7 @@ function check(tile)
 		{
 			tile.src = selected_tile.src;
 			tile.alt = selected_tile.alt;
-			selected_tile.src = "";
+			selected_tile.src = "blank.png";
 			selected_tile.alt = "";
 			selected_tile = null;
 			has_selection = false;
