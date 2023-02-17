@@ -68,6 +68,35 @@ function move(tile)
 					}
 				}
 			}
+			else if ((tile.alt.slice(1,2) == "A") &&
+					 (sel_col == dst_col))
+			{
+				let diff = dst_row-sel_row;
+				if (diff > 0)
+				{
+					for (let i = sel_row+1; i < dst_row; i++)
+					{
+						let id = "r"+i+"c"+sel_col;
+						let path = document.getElementById(id);
+						if (path.alt.length !== 0)
+						{
+							return false;
+						}
+					}
+				}
+				else
+				{
+					for (let i = sel_row-1; i > dst_row; i--)
+					{
+						let id = "r"+i+"c"+sel_col;
+						let path = document.getElementById(id);
+						if (path.alt.length !== 0)
+						{
+							return false;
+						}
+					}
+				}
+			}
 			else
 			{
 				return false;
